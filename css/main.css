@@ -82,6 +82,12 @@ fieldset {
 textarea {
   resize: vertical;
 }
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -91,6 +97,7 @@ textarea {
 html {
   font-size: 1rem;
 }
+
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -102,14 +109,18 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: #e2e3ed;
   text-decoration: none;
 }
+
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
 h3,
@@ -124,16 +135,24 @@ p {
   font-size: 0.875em;
   line-height: 1.285;
 }
+img {
+  width: 100%;
+}
+figure{
+  margin: 0;
+}
 
 
 address {
   font-style: normal;
 }
-
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
-}
+  margin:50px 0;
+  }
+  
+
+
 
 /* -------------Base Header-Footer Styles ---------*/
 
@@ -149,7 +168,11 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
+ 
+}
+
+header figure{
+  width: 60%;
 }
 
 .header-divider {
@@ -215,8 +238,25 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
+}
+.hero-area h1{
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+figure {
+width: 500px;
+}
+ul,
+ol {
+  margin: 0;
 }
 
 /* Aside */
@@ -226,9 +266,7 @@ aside {
   display: flex;
   justify-content: center;
 }
-aside .form {
-  margin-top: 30px;
-}
+
 
 input[type=text] {
   box-sizing: border-box;
@@ -251,10 +289,38 @@ input[type=button] {
   text-align: center;
   text-transform: uppercase;
 }
+aside .form {
+  margin-top: 30px;
+}
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 /* Features */
 
 .features {
+  background: url(../img/unplugged-retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -340,7 +406,7 @@ FAQ
   margin-bottom: 50px;
 }
 .faq-content h4 {
-line-height: 1.33;
+line-height: 1.333;
 
 }
 
@@ -470,9 +536,7 @@ header figure {
     justify-content: space-between;
   }
 
-  .header-divider {
-    display: none;
-  }
+  
 
   /* Hero Area*/
   .hero-area h1 {
@@ -492,7 +556,7 @@ header figure {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 45%;
+    width: 40%;
     margin: 0;
   }
 
@@ -522,8 +586,9 @@ header figure {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
-    width: 50%;
+     width: 50%;
   }
   .reviews h3{
     width: 75%;
@@ -601,10 +666,6 @@ header figure {
   .faq h2 {
     width: 100%;
   }
-}
-.faq h2 {
-  width: 100%;
-}
 
 .faq h4,
 .faq p {
@@ -613,6 +674,7 @@ header figure {
 }
 aside .form {
   margin-top: 30px;
+}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -694,6 +756,7 @@ aside .form {
     width: 95%;
     font-size: 3em;
   }
+
   .contact-content h4{
   font-size: 1.875em;
   }
@@ -706,7 +769,7 @@ aside .form {
     font-size: 3em;
   }
   .faq h4, 
-  .faq p{
+  .faq p {
     font-size: 1.125em;
     line-height: 1;
   }
