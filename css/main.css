@@ -104,6 +104,7 @@ body {
   font-size: 1em;
   color: #e2e3ed;
   text-align: left;
+  background-color: #202322;
 }
 
 ul,
@@ -127,17 +128,19 @@ h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  margin: 20px 0;
   font-size: 1.125em;
+  margin: 20px 0;
 }
 
 p {
   font-size: 0.875em;
   line-height: 1.285;
 }
+
 img {
   width: 100%;
 }
+
 figure{
   margin: 0;
 }
@@ -146,13 +149,12 @@ figure{
 address {
   font-style: normal;
 }
+
 .content-wrapper {
   width: 90%;
   margin:50px 0;
   }
   
-
-
 
 /* -------------Base Header-Footer Styles ---------*/
 
@@ -164,6 +166,7 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,6 +232,7 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
+
 footer .copyright {
   margin: 20px 0;
 }
@@ -238,26 +242,21 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  background: url(../img/unplugged-retreat.jpg);
+  background: url('../img/unplugged-retreat.jpg');
   background-size: cover;
   background-position: center;
   min-height: 500px;
   display: flex;
   justify-content: center;
 }
+
 .hero-area h1{
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
 }
-figure {
-width: 500px;
-}
-ul,
-ol {
-  margin: 0;
-}
+
 
 /* Aside */
 
@@ -267,28 +266,6 @@ aside {
   justify-content: center;
 }
 
-
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 aside .form {
   margin-top: 30px;
 }
@@ -318,7 +295,7 @@ input[type=button] {
 /* Features */
 
 .features {
-  background: url(../img/unplugged-retreat-features.jpg);
+  background: url('../img/unplugged-retreat-features.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -339,6 +316,7 @@ input[type=button] {
   align-items: flex-start;
   flex-flow: row wrap;
 }
+
 .features p {
   text-align: center;
   margin: 0;
@@ -351,10 +329,12 @@ input[type=button] {
   display: flex;
   justify-content: center;
 }
+
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
 }
+
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
@@ -396,10 +376,9 @@ FAQ
   flex-flow: row wrap;
   margin: 50px 0 0 0;
 }
-.faq h2{
+.faq h2 {
   margin-bottom: 40px;
   line-height: 1;
-
 }
 
 .faq-content {
@@ -524,7 +503,7 @@ line-height: 1.333;
     width: 100%;
     justify-content: space-between;
   }
-header figure {
+ header figure {
     width: 30%;
   }
 
@@ -546,6 +525,11 @@ header figure {
   }
 
   /* Aside */
+  aside {
+    background-color: #527158;
+    display: flex; 
+    justify-content: center;
+  }
 
   aside .content-wrapper {
     margin: 50px 0;
@@ -627,6 +611,11 @@ header figure {
      About Page
      ========================================================================== */
 
+  .mission {
+   background-color: #527158;
+   display: flex;
+   justify-content: center;
+  }
   .mission-content {
     display: flex;
     justify-content: space-between;
@@ -637,6 +626,26 @@ header figure {
   .mission-content p {
     width: 45%;
   }
+  .map figure{
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+ .contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+ }
 
   .contact-section .content-wrapper h2 {
     width: 80%;
@@ -654,8 +663,12 @@ header figure {
   /* ==========================================================================
      FAQ Page
      ========================================================================== */
-
-  .faq .content-wrapper {
+    .faq {
+      background-color: #527158;
+      display: flex;
+      justify-content: center;
+    }
+   .faq .content-wrapper {
     justify-content: space-between;
   }
 
