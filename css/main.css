@@ -142,7 +142,7 @@ img {
 }
 
 figure{
-  margin: 0;
+margin: 0;
 }
 
 
@@ -573,6 +573,7 @@ line-height: 1.333;
   aside .content-wrapper .form {
      margin: 0;
   }
+
   input [type=text] {
     box-sizing: border-box;
     width: 50%;
@@ -635,6 +636,11 @@ line-height: 1.333;
     width: 75%;
     margin: 0;
   }
+  article div {
+    padding-left: 10px;
+
+  }
+
 
   /*Footer*/
   footer .content-wrapper {
@@ -754,21 +760,18 @@ aside .form {
   /* General styles */
   .content-wrapper {
     max-width: 960px;
-    display: flex;
-    flex-direction: row;
-     
+         
   }
-
+ 
   /* Header */
   header {
     padding: 15px 0;
   }
+
   .header-divider{
     display: none;
   }
-  header figure {
-    width: 30%;
-  }
+  
   
   h2 {
     font-size: 2.25em;
@@ -807,7 +810,9 @@ aside .form {
   /* Features */
 
   .features h2 {
+    display: flex;
     width: 90%;
+    padding: 20px;
   }
 
   .features article {
@@ -821,7 +826,7 @@ aside .form {
 
   .reviews article div {
     width: 42%;
-  }
+    }
 
   footer h4 {
     font-size: 1.875em;
