@@ -406,6 +406,7 @@ FAQ
   flex-flow: row wrap;
   margin: 50px 0 0 0;
 }
+
 .faq h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -541,9 +542,9 @@ line-height: 1.333;
     width: 20%;
   }
 
-  header nav ul {
-    justify-content: space-between;
-  }
+  header nav ul  {
+    display: flex;
+    flex-direction: row;
 
     /* Hero Area*/
   .hero-area {
@@ -735,6 +736,8 @@ line-height: 1.333;
    .faq .content-wrapper {
     justify-content: space-between;
   }
+
+  
 
   .faq-content {
     flex-basis: 45%;
@@ -947,4 +950,5 @@ aside .form {
   h3 {
     page-break-after: avoid;
   }
+}
 }
